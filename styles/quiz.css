@@ -1,0 +1,14 @@
+h1 {
+    display:flex;
+    justify-content: center;
+    background-color: firebrick;
+}
+form {
+    display:flex;
+    justify-content: space-around;
+    align-content: flex-start;
+}
+button {
+    background-color:aquamarine;
+    justify-content: center;
+}
