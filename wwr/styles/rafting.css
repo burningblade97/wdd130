@@ -13,6 +13,14 @@
     --nav-hover-link-color: #0078be;
     --nav-hover-background-color: #c5db00;
 }
+header {
+    margin: 1rem auto;
+    display: grid;
+    grid-template-columns: 120px 1fr 2fr;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+    max-width: 1000px;
+}
 h2 {
     font-family: var(--heading-font);
     color: var(--primary-color);
@@ -29,6 +37,10 @@ p{
 }
 nav{
     text-decoration: none;
+    text-align: right;
+    display: flex;
+    list-style: none;
+    flex: 1 1 100%;
 }
 .hero img{
     display:block;
@@ -48,4 +60,20 @@ article{
 
 section{
     clear: both;
+    display: grid;
+    grid-template-columns: auto;
+}
+header, img, nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    column-gap: 10px;
+}
+.adventure figure{
+    display: flex;
+    flex-direction: column;
+}
+footer {
+    display: flex;
+    justify-content: flex-end;
 }
